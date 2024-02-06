@@ -170,5 +170,5 @@ A simulation was run in Vivado using the module and testbench before implementin
 
 After verifying that the module and testbench produced the correct logic results, the design was successfully implemenyed on Basys-3 (video was submitted separately).
 
-##**Challenges and learnings**
+## **Challenges and learnings**
 Our group was initially unfamiliar with using Vivado software and would often run into errors when writing the code. But through this experience, we became more experienced in designing modules, testbenches, and simulations. Furthermore, we learned to implement  our logic gate designs in Vivado to a Basys-3 FPGA board. 
