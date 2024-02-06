@@ -19,7 +19,7 @@ We downloaded the Basys-3 constrain file and unhashed the respective lines of Sw
 > **Input: a:V17, b:V16, c:W16**
 > **Output: aa:U16, bb:E19, cc:U19, y:V19**
 
-## **Module and testbench**
+## **Module and testbench design**
 The module code was written using Verilog operations to fulfill the desired logic function:
 > y = ab + c  &rarr;  y = (a & b) | c
 
@@ -90,7 +90,7 @@ Using the given table, our group observed the following logic:
 | | 1 | 0 | 1 | 1 | 0 |
 | | 1 | 1 | 1 | 1 | 1 |
 
-##**Module and testbench design**
+## **Module and testbench design**
 The module code was written through two approaches (with different constrain file switch and LED names) using Verilog operations to fulfill the desired logic function:
 ```cp
 #Approach 1
