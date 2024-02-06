@@ -23,6 +23,8 @@ We downloaded the Basys-3 constrain file and unhashed the respective lines of Sw
 The module code was written using Verilog operations to fulfill the desired logic function:
 > y = ab + c  &rarr;  y = (a & b) | c
 
+![msg-4113814650-186765](https://github.com/stephlovesfries/T01-Basys3/assets/115708694/bae7f23c-f312-447f-b2a3-387c0d51daca)
+
 ```cp
 'timescale 1ns / 1ps
 
@@ -64,7 +66,10 @@ initial
 endmodule
 
 ```
+
 A simulation was run in Vivado using the module and testbench before implementing on Basys-3 .
+
+![photo1706783471](https://github.com/stephlovesfries/T01-Basys3/assets/115708694/789a46f8-cad1-4a8f-9b84-4fbc98f7d36d)
 
 After verifying that the module and testbench produced the correct logic results, the design was successfully implemented on Basys-3 (video was submitted separately). 
 
@@ -160,6 +165,8 @@ initial
 endmodule
 ```
 A simulation was run in Vivado using the module and testbench before implementing on Basys-3.
+
+![photo1706787023](https://github.com/stephlovesfries/T01-Basys3/assets/115708694/61445125-3d6b-4e56-91cb-65787840b32f)
 
 After verifying that the module and testbench produced the correct logic results, the design was successfully implemenyed on Basys-3 (video was submitted separately).
 
