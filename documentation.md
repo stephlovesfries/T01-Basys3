@@ -24,6 +24,8 @@ The module code was written using Verilog operations to fulfill the desired logi
 > y = ab + c  &rarr;  y = (a & b) | c
 
 ```cp
+'timescale 1ns / 1ps
+
 module aANDbORc (y, a, b, c, aa, bb, cc);
   output y,aa,bb,cc;
   input a,b,c;
@@ -39,3 +41,36 @@ endmodule
 
 ```
 The testbench code was also written to check whether the module functioned properly.
+```cp
+'timescale 1ns / 1ps
+
+module aANDbORc_tb;
+  wire y;
+  reg a,b,c;
+aANDbORc dut(y,a,b,c);
+
+initial
+  begin
+  #0 a=0 ; b=0 ; c=0 ;
+  #10 a=0 ; b=1 ; c=0 ;
+  #10 a=1 ; b=0 ; c=0 ;
+  #10 a=1 ; b=1 ; c=0 ;
+  #10 a=0 ; b=0 ; c=1 ;
+  #10 a=0 ; b=1 ; c=1 ;
+  #10 a=1 ; b=0 ; c=1 ;
+  #10 a=1 ; b=1 ; c=1 ;
+  #10 $stop;
+  end
+endmodule
+
+```
+A simulation was run in Vivado using the module and testbench before implementing on Basys-3 .
+
+After verifying that the module and testbench produced the correct logic results, the design was successfully implemented on Basys-3 (video was submitted separately). 
+
+# Full Adder Optional Task
+Using the given table, our group observed the following logic:
+> Sum = a $\oplus$ b $\oplus$ c
+> Cout = (a & b) + (b & c) + (c & a)
+
+
