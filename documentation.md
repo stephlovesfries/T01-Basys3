@@ -75,7 +75,7 @@ After verifying that the module and testbench produced the correct logic results
 
 # Full Adder Optional Task
 Using the given table, our group observed the following logic:
-> Sum = a $\oplus$ b $\oplus$ c
+> Sum = a $\oplus$ b $\oplus$ c  
 > Cout = (a & b) + (b & c) + (c & a)
 
 | | Output | Output| Input | Input| Input |
