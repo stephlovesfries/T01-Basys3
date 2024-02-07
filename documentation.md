@@ -1,7 +1,7 @@
 # T01 Logic Gates Hands-on Task (Basys-3)
 ## **Logic Gates Hands-on Task**  
 Our group aimed to design a logic function using Verilog and implement it on the Basys-3. The logic function was designed based on the given boolean expression:   
-> **y = ab+c**
+> **y = a & b + c**
 
 | a | b | c | y |
 | ----- | ----- | ----- | ----- |
